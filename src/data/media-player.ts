@@ -15,7 +15,7 @@ import {
   mdiPlaylistMusic,
   mdiPlayPause,
   mdiPodcast,
-  mdiPower, mdiPowerCycle,
+  mdiPower,
   mdiRepeat,
   mdiRepeatOff,
   mdiRepeatOnce,
@@ -296,7 +296,7 @@ export const computeMediaControls = (
 
   if (supportsFeature(stateObj, MediaPlayerEntityFeature.TURN_OFF)) {
     buttons.push({
-      icon: mdiPowerCycle,
+      icon: mdiPower,
       action: "turn_off",
     });
   }
